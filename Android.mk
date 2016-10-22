@@ -1,5 +1,6 @@
 # Board specific SELinux policy variable definitions
-ifneq ($(TARGET_EXCLUDE_QCOM_SEPOLICY),true)
+ifneq ($(TARGET_USES_AOSP),true)
+ifeq ($(call is-vendor-board-platform,QCOM),true)
 LOCAL_PATH:= $(call my-dir)
 BOARD_SEPOLICY_DIRS := \
        $(BOARD_SEPOLICY_DIRS) \
@@ -10,3 +11,4 @@ BOARD_SEPOLICY_DIRS := \
 
 endif
 -include vendor/exodus/sepolicy/qcom/sepolicy.mk
+endif
