@@ -9,3 +9,4 @@ BOARD_SEPOLICY_DIRS := \
        $(LOCAL_PATH)/$(TARGET_BOARD_PLATFORM)
 
 endif
+-include vendor/exodus/sepolicy/qcom/sepolicy.mk
