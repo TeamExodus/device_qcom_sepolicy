@@ -265,6 +265,8 @@
 /system/bin/wifi_ftmd                           u:object_r:wifi_ftmd_exec:s0
 /system/vendor/bin/smcinvoked                   u:object_r:smcinvoke_daemon_exec:s0
 /system/bin/qdmastatsd                          u:object_r:qdmastatsd_exec:s0
+/system/etc/init\.qcom\.bt\.sh                  u:object_r:bluetooth_loader_exec:s0
+
 ###################################
 # sysfs files
 #
